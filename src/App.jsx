@@ -3,7 +3,6 @@ import './App.css'
 
 //function App({ min = 0, max = 20 }) {
   function App(){
-
   //const [count, setCount] = useState(0)
   let [counter, setCounter] = useState(5);
 
