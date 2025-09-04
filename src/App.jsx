@@ -4,7 +4,8 @@ import './App.css'
 //function App({ min = 0, max = 20 }) {
   function App(){
   //const [count, setCount] = useState(0)
-  let [counter, setCounter] = useState(5);
+  //let [counter, setCounter] = useState(5);
+  const [counter, setCounter] = useState(5);
 
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(20);
@@ -12,7 +13,9 @@ import './App.css'
   const addValue = () => {
     //counter = counter + 1;
     if(counter < max ){
-    setCounter(counter + 1);
+   // setCounter(counter + 1);
+    setCounter(counter => counter + 1);
+    setCounter(counter => counter + 1);
     }
     //console.log("value addeed "+counter+ " times "+ Math.random());
   }
